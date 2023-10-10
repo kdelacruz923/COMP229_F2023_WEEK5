@@ -36,7 +36,7 @@ const index_1 = __importDefault(require("../Routes/index"));
 const app = (0, express_1.default)();
 exports.default = app;
 const DBConfig = __importStar(require("./db"));
-mongoose_1.default.connect('mongodb://127.0.0.1:27017/test');
+mongoose_1.default.connect('mongodb://127.0.0.1:27017/clothing_store');
 const db = mongoose_1.default.connection;
 db.on('error', console.error.bind(console, 'connection error'));
 db.once('open', function () {

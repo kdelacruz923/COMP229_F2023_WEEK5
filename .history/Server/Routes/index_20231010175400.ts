@@ -4,7 +4,7 @@ export default router;
 
 
 //create a controller instance
-import {DisplayABoutPage, DisplayContactPage, DisplayHomePage, DisplayProjectPage, DisplayServicePage} from '../Controllers/index';
+import {DisplayABoutPage, DisplayHomePage} from '../Controllers/index';
 
 /* GET home page. */
 router.get('/', DisplayHomePage);
@@ -16,13 +16,20 @@ router.get('/home', DisplayHomePage);
 router.get('/about', DisplayABoutPage);
 
 /* GET Projects page. */
-router.get('/project', DisplayProjectPage);
+router.get('/about', DisplayABoutPage);
 
 /* GET Services page. */
-router.get('/services', DisplayServicePage);
+router.get('/services', function(req, res, next)
+{
+ 
+  
+});
 
 /* GET Contact page. */
-router.get('/contact', DisplayContactPage);
+router.get('/contact', function(req, res, next)
+{
+
+});
 
 // module.exports = router;   // javascript
 

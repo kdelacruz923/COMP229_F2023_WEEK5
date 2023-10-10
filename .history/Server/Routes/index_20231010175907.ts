@@ -19,7 +19,7 @@ router.get('/about', DisplayABoutPage);
 router.get('/project', DisplayProjectPage);
 
 /* GET Services page. */
-router.get('/services', DisplayServicePage);
+router.get('/services', DisDisplayServicePage);
 
 /* GET Contact page. */
 router.get('/contact', DisplayContactPage);
